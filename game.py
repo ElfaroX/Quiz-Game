@@ -36,15 +36,43 @@ time.sleep(1)
 # answer_str = input('Your answer: ')
 # answer = int(answer_str)  # convert the string to an integer
 # test(answer)
+score = 0 
 
 answer = input(f'{Questions[0]}? ')
 if int(answer) == 16 :
     print('Correct!')
+    score += 5
 else:
     print('Try again')
 
 answer = input(f'{Questions[1]}? ')
 if int(answer) == 56 :
     print('Correct!')
+    score += 5
 else:
     print('Try again')
+
+answer = input(f'{Questions[2]}? ')
+if int(answer) == 3 :
+    print('Correct!')
+    score += 5
+else:
+    print('Try again')
+
+answer = input(f'{Questions[3]}? ')
+if int(answer) == 8 :
+    print('Correct!')
+    score += 5
+else:
+    print('Try again')
+
+answer = input(f'{Questions[4]}? ')
+if int(answer) == 132 :
+    print('Correct!')
+    score += 5
+else:  
+    print('Try again')
+
+time.sleep(1)
+
+print(f"{user_name} your score is : {score}")
