@@ -1,5 +1,6 @@
 import os
 import time 
+
 Questions = ["what's 7 + 9",
              "what's 8 * 7",
              "what's ( 9 - 3 ) / 2",
@@ -12,6 +13,11 @@ welcome_msg = 'Welcome to my Quiz game!' # calculate the number of spaces needed
 padding = (term_width - len(welcome_msg)) // 2
 print(' ' * padding + welcome_msg) # print the message with padding on both sides
 
+play = input('Do you want to play? (yes/no): ')
+if play != 'yes':
+    quit()
+
+os.system('cls')
 user_name = input('What is your name?\n') 
 
 os.system('cls') # clear the screen and move the cursor to the top-left corner again
@@ -23,7 +29,7 @@ print(Questions[0])
 
 def test(answer):
     if answer == 16:
-        print('Your answer is Right')
+        print('Your answer is correct')
     else:
         print('Try again')
 
